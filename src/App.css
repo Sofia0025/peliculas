@@ -17,6 +17,17 @@ body {
   padding: 20px;
 }
 
+.movie-card a {
+  color: white;
+  text-decoration: none;
+}
+
+.movie-card a:hover {
+  color: #0070f3;
+}
+
+
+
 .movie-card {
   background: var(--primary-color);
   color: var(--secondary-color);
@@ -52,4 +63,85 @@ body {
   padding: 8px 12px;
   cursor: pointer;
   margin-left: 5px;
+}
+
+.movie-detail h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.movie-detail img {
+  display: block;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.movie-detail p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.movie-detail strong {
+  font-weight: bold;
+}
+
+.movie-detail .section-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.movie-detail {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.card .section-title {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.card .movie-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card .movie-info div {
+  flex: 1 1 45%;
+}
+
+.card .movie-info div p {
+  margin-bottom: 5px;
 }

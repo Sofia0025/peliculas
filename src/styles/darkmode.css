@@ -1,11 +1,88 @@
+.movie-detail {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.card .section-title {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.card .movie-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card .movie-info div {
+  flex: 1 1 45%;
+}
+
+.card .movie-info div p {
+  margin-bottom: 5px;
+}
+
 [data-theme='dark'] {
-    --primary-color: #ffffff;
-    --secondary-color: #1f1f1f;
-  }
+  --primary-color: #ffffff;
+  --secondary-color: #1f1f1f;
+  --card-bg-color: #333333;
+  --card-shadow: rgba(255, 255, 255, 0.1);
+  --text-color: #ffffff;
+  --link-color: #ffffff;
   
-  body {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    transition: background 0.3s, color 0.3s;
+  .movie-card a {
+    color: black;
+    text-decoration: none;
   }
-  
+}
+
+body {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+.card {
+  background-color: var(--card-bg-color);
+  box-shadow: 0 4px 8px var(--card-shadow);
+}
+
+.card h2, .card p {
+  color: var(--text-color);
+}
+
+.movie-card a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.movie-detail {
+  color: var(--primary-color);
+}
