@@ -1,0 +1,11 @@
+[data-theme='dark'] {
+    --primary-color: #ffffff;
+    --secondary-color: #1f1f1f;
+  }
+  
+  body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: background 0.3s, color 0.3s;
+  }
+  
